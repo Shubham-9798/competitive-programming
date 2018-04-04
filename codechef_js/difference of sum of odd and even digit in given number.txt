@@ -1,0 +1,23 @@
+var odd=0,even=0;
+
+function work(p)
+{
+while(p!=0)
+{var n=p%10;
+   
+if(n%2==0)
+  even=even+n;
+else
+odd=odd+n;
+  p=Math.floor(p/10);
+  console.log(n,p);
+}
+  var k=odd-even;
+   if(k<0)
+   k=-2*k+k;
+return k;
+}
+
+var s=work(123443);
+
+console.log(s);

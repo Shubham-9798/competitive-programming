@@ -1,0 +1,65 @@
+var ab=[2,5,9,10,55,70,3,6,20,30,90];
+
+function merge_break(arry)
+{
+var a_lth=arry.length,a=[],b=[];
+
+mid=a_lth/2;
+
+var arry1=Math.floor(mid);
+if(a_lth<2)
+ return 1;
+else
+{
+ for(var i=0;i<arry1;i++)
+ {
+  a.push(arry[i]);
+}
+ for(var j=0;j<a_lth-arry1;j++)
+{
+  b.push(arry[j]);
+}
+}
+merge_break(a);
+
+merge_break(b);
+
+var m=merging(a,b);
+console.log(m);
+
+}
+
+function merging(a,b)
+{
+var i=0,j=0,c=[];
+ var a1=a.length,b1=b.length;
+
+ while(i<a1&&j<b1)
+  {
+if(a[i]<b[j]) 
+   {
+    c.push(a[i]);
+     i++;
+    }
+
+else
+  {
+c.push(b[j]);
+   j++;}  
+  }
+while(i<a1)
+{c.push(a[i]);
+i++;
+}
+
+while(j<b1)
+{
+c.push(b[j]);
+j++;
+}
+
+
+
+return c;
+}
+merge_break(ab);

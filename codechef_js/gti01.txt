@@ -1,0 +1,57 @@
+var p=0,pp=0,ppp=0,a="ggggrrrr",m=8;
+var rg,gr;
+
+function cost(aa,bb)
+{
+  pp=pp+aa+bb;
+  console.log("shubham " +pp);
+  return pp;
+}
+
+
+
+function cost1(aa,bb)
+{
+  ppp=ppp+aa+bb;
+  console.log("shubham " +ppp);
+  return ppp;
+}
+
+for(var i=0;i<m;i++)
+{
+  if((i%2==0))
+  { if(a[i]=="g")    //"rgrgrgrgrg"
+    {rg=cost(3,0);
+     console.log(i);
+
+}}
+
+else 
+  if(a[i]=="r")
+     {rg=cost(0,5);
+console.log(i+" jk");}
+   
+
+
+}
+
+
+for(var i=0;i<m;i++)
+{
+  if((i%2==0))
+  { if(a[i]=="r")    //"grgrgrgr"
+    {gr=cost1(5,0);
+     console.log(i);
+
+}}
+
+else 
+  if(a[i]=="g")
+     {gr=cost1(0,3);
+console.log(i+" jk");}
+
+}
+if(rg>=gr)
+  console.log("answer "+gr);
+else
+  console.log("answer 2nd " +rg);

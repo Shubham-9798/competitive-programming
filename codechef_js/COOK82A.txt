@@ -1,0 +1,19 @@
+var test;
+test=prompt("Enter the test case");
+while(test--)
+{
+var a=prompt("Barcelona");
+var b=prompt("Malaga");
+var c=prompt("Real Madrid");
+var d=prompt("Eibar");
+
+console.log("Barcelona "+a);
+console.log("Malaga "+b);
+console.log("RealMadrid "+c);
+console.log("Eibar "+d);
+if((c<b)&&(a>d))
+  console.log("Barcelona");
+else
+  console.log("RealMadrid");
+
+}

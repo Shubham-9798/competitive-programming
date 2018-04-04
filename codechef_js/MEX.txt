@@ -1,0 +1,66 @@
+#include<stdio.h>
+int main()
+{
+int t;
+scanf("%d",&t);
+while(t>0)
+{
+long int n,k;
+scanf("%ld%ld",&n,&k);
+int i=0;
+int s[5000];
+int m=n+k;
+while(i<n)
+{
+scanf("%d", &s[i]);         //error in displaying the text
+i++;
+}
+       i=0;
+	int j;
+	for(i=0;i<m;i++)
+	{
+	    for(j=0;j<m-1-i;j++)
+	    {
+		if(s[j]>s[j+1])
+		{
+				  int t;
+				 t =s[j];
+				  s[j]=s[j+1];
+					s[j+1]=t;
+
+
+		   }
+
+		 }
+	    }
+
+
+		
+	    }
+	    if(m==0)
+	  
+	   {
+	   if(s[0]==1)
+	      printf("0"); 
+	    else
+	       for(j=1;j<n;j++)
+	          
+	          if !(s[j]==s[j-1]+1)
+	            //  printf("%d",s[j]+1);
+	          //  else
+	             printf("%d",s[j]+1);
+	       
+	    }
+	  else
+	  
+	     for(int val=0;val<m;val++)
+	  {
+	     for(j=0;j<n;j++)
+	     
+	  }
+	  
+	   
+ }
+
+return 0;
+}

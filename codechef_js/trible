@@ -1,0 +1,28 @@
+var p="...a..b..a...a",c=0,qq="a",pp="b",cpp=0,rem;
+var q=p.length; //a-->qq //b-->pp
+console.log(q);
+for(var j=0;j<q;j++)
+{
+  if(p[j]=="a")
+    { ++c;
+  
+     }
+    if(p[j]=="b")
+    { ++cpp;
+  
+    }
+}
+
+for(var j=0;j<q;j++)
+{ if(p[j]=="a")&&(qq=="a")
+    {c++; 
+     }
+    if(p[j]=="b")
+     qq="b";
+ { 
+
+}
+}
+console.log(c);  
+console.log(cpp);
+
