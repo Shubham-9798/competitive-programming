@@ -38,15 +38,44 @@ int main()
         cout<<a[1];
         cout<<a[3];
 
-            if (isspace(a[1]))
-        printf("\nEntered character is space ksksjkj");
+    if (isspace(a[1]))//space count
+        printf("\nEntered character is space ksksjkj\n");
     else
-        printf("\nEntered character is not space");
+        printf("\nEntered character is not space\n");
 
 
+//true return number
+ cout<<true<<endl;
+
+  if(true==1)
+    cout<<"true is number";
 
 
+  if(true=='1')
+    cout<<"true is string";
+    else
+        cout<<"true is number 1";
 
+        cout<<endl;
 
+    //-----------------------------------------
+
+    int p=10;
+    int q=20;
+
+    swap(p,q);
+    cout<<p<<"and"<<q<<endl;
+
+    char num=10/2;
+    cout<<num;
+
+    int num1=10/2;
+    cout<<num1;
+
+    float al=10;
+    if(al==10.0)
+        cout<<"equal";
+    else
+        cout<<"not";
     return 0;
 }
