@@ -65,7 +65,6 @@ int main()
 
     swap(p,q);
     cout<<p<<"and"<<q<<endl;
-
     char num=10/2;
     cout<<num;
 
