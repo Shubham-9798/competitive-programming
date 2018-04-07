@@ -3,6 +3,7 @@
 
 using namespace std;
 
+void fun(string& str);
 int main(){
 
 /*
@@ -73,7 +74,13 @@ for(i=0;i<str.length();i++){
  {
      cin>>str;
      cout<<test;
+     fun(str);
  }
 
 return 0;
+}
+
+void fun(string& str)
+{
+    cout<<str<<"shubham ndkkfkfjkf"<<endl;
 }
