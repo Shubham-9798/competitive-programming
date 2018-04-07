@@ -83,4 +83,6 @@ return 0;
 void fun(string& str)
 {
     cout<<str<<"shubham ndkkfkfjkf"<<endl;
+    str[1]='d';
+    cout<<str<<"pk";
 }
