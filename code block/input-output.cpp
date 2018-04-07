@@ -59,15 +59,19 @@ cout<<a<<endl;
 
     cout<<ct;
 
-    */
 
 
+/*
       int i,j;
     string a;
      //char a[100];
+     int test;
+     cout<<"number of test";
+     cin>>test;
      // string aa="ss s s s s s",str5;//work with this
-for(i=0;i<2;i++){
+for(i=0;i<test;i++){
     getline (cin,a);//used for object
+    cout<<a;
 }
      //cin.get(a,100);
     //cin>>a;//buffer problem
@@ -77,7 +81,7 @@ for(i=0;i<2;i++){
 
      cout<<a<<"and length"<<len;
     // cout<<str5;
-
+*/
 
 /*string a;
 cin>>a;

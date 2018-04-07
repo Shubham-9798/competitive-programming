@@ -71,7 +71,7 @@ int main()
     int num1=10/2;
     cout<<num1;
 
-    float al=10;
+    double al=10;
     if(al==10.0)
         cout<<"equal";
     else
