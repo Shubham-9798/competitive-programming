@@ -7,7 +7,7 @@ using namespace std;
 
 int main()
 {
-
+/*
 
   switch ('asss')
 {
@@ -19,7 +19,14 @@ int main()
         break;
     default:
         cout<<"default"; // code to be executed if n doesn't match any cases
-}
+}*/
+
+    string a="sjkhdkhd";
+    cout<<a[3]<<endl;
+
+    char aa[20]="lddkjdkjdkj";
+    cout<<aa;
+
     return 0;
 }
 
