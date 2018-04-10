@@ -4,7 +4,7 @@ using namespace std;
 // Function prototype
 
 
-
+int fact(int a);
 int main()
 {
     int a,test;
@@ -14,6 +14,12 @@ int main()
 
     while(test--){
 
+    int a;
+    cout<<"enter the number";
+    cin>>a;
+   cout<< fact(a)<<endl;
+
+
 
     }
 
@@ -21,7 +27,13 @@ int main()
     return 0;
 }
 
+int fact(int a){
+   if(a==1)
+     return 1;
 
+return fact(a-1)*a;
+
+}
 
 
 
