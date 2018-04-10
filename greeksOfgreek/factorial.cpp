@@ -14,23 +14,13 @@ int main()
 
     while(test--){
 
-        cout<<"enter the range for twin prime";
-        cin>>a;
-
-        for(int i=2;i<=a;i++){
-                for(int j=2;j<i;j++){
-
-                }
-
-
-
-        }
 
     }
 
 
     return 0;
 }
+
 
 
 

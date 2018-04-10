@@ -4,7 +4,7 @@ using namespace std;
 // Function prototype
 
 
-
+int add(int a);
 int main()
 {
     int a,test;
@@ -14,17 +14,10 @@ int main()
 
     while(test--){
 
-        cout<<"enter the range for twin prime";
+        cout<<"enter the range for number";
         cin>>a;
 
-        for(int i=2;i<=a;i++){
-                for(int j=2;j<i;j++){
-
-                }
-
-
-
-        }
+cout<<add(a);
 
     }
 
@@ -33,7 +26,15 @@ int main()
 }
 
 
+int add(int a){
+int t=0;
+if(a==0)
+    return 0;
 
+    t=add(a-1)+a;
+    return t;
+
+}
 
 
 
