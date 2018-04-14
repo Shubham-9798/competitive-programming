@@ -30,8 +30,8 @@ int main()
 
 
                 }
-               if(j==2)
-                continue;
+              // if(j==2)
+                //continue;
 
             if((prime==true)&&(j+2<=a))
                     {
