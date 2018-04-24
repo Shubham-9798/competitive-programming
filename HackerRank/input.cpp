@@ -9,7 +9,9 @@ int main() {
     char c;
     float d;
     double e;
-    scanf("%d",&a);scanf("%ld",&b);scanf(" %c",&c);
+    scanf("%d",&a);
+    scanf("%ld",&b);
+    scanf(" %c",&c);
     scanf("%f",&d);
     scanf("%lf",&e);
 
