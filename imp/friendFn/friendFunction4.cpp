@@ -6,13 +6,25 @@ using namespace std;
 class A{
 
  public:
-  friend void fun();
+  void fun(){
+  ...
+  .....
+
+  }
+
+    void fun1(){
+  ...
+  .....
+
+  }
 };
 
 class B{
 
-  void fun();
+ friend class A;
+  //friend A::fun();
 
+ // friend B::fun();
 
 
 };
