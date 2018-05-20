@@ -1,5 +1,6 @@
 //#include <stdio.h>
 //#include <stdlib.h>
+
 #include <bits/stdc++.h>
 #include<iostream>
 
@@ -25,10 +26,10 @@ int main()
 
  }
 int n2;
-     printf("\nEnter new size of array: ");
+    printf("\nEnter new size of array: ");
 //    scanf("%d", &n2);
-n2=6;
-    ptr = realloc(ptr, 6);
+    n2=6;
+    ptr = (int *)realloc(ptr, 6);
 
  while(n2--){
    printf("%d\t%d\n",*(ptr+i),ptr+i);
