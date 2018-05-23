@@ -19,7 +19,7 @@ char arr[] = {'g', 'e', 'e', 'k', 's','\0', 'q', 'u', 'i', 'z'}; //where it find
 
 void fun(char *arr)
 {
-   int i;
+   int i,j;
    unsigned int n = strlen(arr);
 
    printf("n = %d\n", n);
