@@ -10,11 +10,11 @@ int main(){
 
   int myints[] = {32,71,12,45,26,80,53,122};
   std::vector<int> myvector (myints, myints+8);
-  int num=122;
+  int num=1522;
 
 
   //sort
-  std::sort (myvector.begin(), myvector.begin()+myvector.size());
+  std::sort (myvector.begin(), myvector.begin()+myvector.size()-1);
 
   // cout<<myvector[0]<<"shubham";
   int a=binarySearch(myvector,num);
@@ -46,6 +46,7 @@ int binarySearch(vector<int> arr,int num)
    cout<<right<<"  right\n";
      while(left<=right){
 
+     cout<<"left"<<left <<"mkm"<<right;
      int mid = left + (right-left)/2;
         cout<<mid<<"mid term it going to strike\n";
 
