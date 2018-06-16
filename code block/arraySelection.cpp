@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
 
+//select any 2 pair of array
 #define d 10000
  int main(){
 

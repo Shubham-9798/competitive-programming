@@ -19,7 +19,6 @@ int binarySearch(int arr[], int l, int r, int x)
         // If x greater, ignore left half
         if (arr[m] < x)
             l = m + 1;
-
         // If x is smaller, ignore right half
         else
             r = m - 1;
