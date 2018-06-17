@@ -1,40 +1,40 @@
-#include<iostream>
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 
 using namespace std;
+int gbl;
+
 
 // Complete the migratoryBirds function below.
-int migratoryBirds(int ar[]) {
-    int n=6;
-    sort(ar,ar +n);int i;
+int migratoryBirds(int *ar,int i,int maxN) {
+    int n=sizeof(ar)/sizeof(*ar);
+    int ct;
+    if(i==5)
+        return 0;
 
-    int max=1,m=ar[0],maxN=1;
-    for(i=1;i<n;i++){
-        if(m==ar[i])
-         {
-            max++;
-
-            }else{
-            if(maxN<max){
-                maxN=max;
-            }
-            m=ar[i];
-            max=1;
+    for(int k=0;k<n;k++){
+        if(ar[k]==i){
+            ct++;
         }
-
-
-
+        if(maxN<ct)
+        {
+            maxN=ct;
+            ct=0;
+            gbl=i;
+        }
     }
-    return i;
+    i++;
+    migratoryBirds(ar, i, maxN);
+    return 0;
 
+   // return 0;
 }
 
+int main()
+{
+    int ar[]={1,4,4,4,2,2,2,1,1,1,1,1,1,1,1,1,1,3,3,3,3,3};
+    int i=1,maxN=0;
+    migratoryBirds(ar, i, maxN);
+    cout<<gbl;
 
-int main(){
-    int arr[]={1 ,4, 4, 4, 5, 3};
-cout<<migratoryBirds(arr);
-
-return 0;
+    return 0;
 }
-
-

@@ -2,21 +2,20 @@
 using namespace std;
 #define d 10000
 
- int func(long int arr[],int n){
-    int k,t=1;
+ int func(long long int arr[],int n){
+    int k,t=0;
 
 
 
    for(int i=0;i<n;i++)
-      for(int j=i;j<n;j++){
-       if(i!=j)
-        {
+      for(int j=i+1;j<n;j++){
+
           k = arr[i]*arr[j];
           cout<<k<<"ssss"<<endl;
-        }
+
        for(int l=0;l<n;l++){
-           if(k!=arr[l])
-           t=0;
+           if(k==arr[l])
+           t=1;
            }
 
       }
@@ -33,7 +32,7 @@ int main()
 
   while(test--){
     cin>>n;
-   long int arr[n];
+   long long int arr[n];
    for(int i=0;i<n;i++)
      cin>>arr[i];
 
