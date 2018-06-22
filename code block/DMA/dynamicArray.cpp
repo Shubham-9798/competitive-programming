@@ -1,25 +1,44 @@
-#include<iostream>
+#include<stdio.h>
+#include<stdlib.h>
+//#include<limit>
 using namespace std;
 
-int func(int a){
- //if(a<1)
-  //  return 1;
-   // cout<<a-1<<"and"<<a-2<<"\n";
-// return func(a-1)+func(a-2);
+int *p;//same for both fun call
+int i=0;
+void insertD(int a){
 
-
-  if(num[i]<1)
-     return 1;
-
-
-
-
+  p[i]=a;
+i++;
 }
 
 
 int main(){
 
-    int p=func(4);//same for both fun call
-    cout<<p;
+       p=(int *)malloc(sizeof(int)*5);
+
+
+
+
+
+    insertD(14);//insert dynamically
+    insertD(14);//insert dynamically
+    insertD(14);//insert dynamically
+    insertD(14);//insert dynamically
+    insertD(14);//insert dynamically
+    insertD(14);//insert dynamically
+    insertD(14);//insert dynamically
+    insertD(14);//insert dynamically
+    insertD(14);//insert dynamically
+    insertD(14);//insert dynamically
+    insertD(14);//insert dynamically
+    insertD(14);//insert dynamically
+
+  for(int i=0;i<14;i++){
+        //printf("%d\n",p[i]);
+         printf("%d---%d\n",*(p+i),p+i);
+
+    }
+
+    printf("%d\n",(sizeof(p)/sizeof(*p)));
 return 0;
 }

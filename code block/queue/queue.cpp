@@ -11,7 +11,7 @@ struct Queue{
 };
 
 struct Queue* createQueue(int a){
-  struct Queue *q = (struct Queue*) malloc(sizeof(struct Queue));
+  struct Queue *q ;//= (struct Queue*) malloc(sizeof(struct Queue));
   q->f=0;
   q->r=0;
   q->capacity=a;
@@ -81,6 +81,7 @@ int main(){
     traverse(q);
     enqueue(q, 10);
     enqueue(q, 20);
+    traverse(q);
     enqueue(q, 30);
     enqueue(q, 40);
 
