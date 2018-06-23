@@ -26,7 +26,7 @@ struct node* binaryTree(int *arr){
   struct node *t=func(arr[0]);
   //struct node *t;
   //t=root;
-  for(int i=0;i<6;i++){//traversing node pass and
+  for(int i=1;i<6;i++){//traversing node pass and
     while(t->left!=t->right){
         if(t->data<arr[i]){
            t= t->left;
@@ -47,11 +47,11 @@ struct node* binaryTree(int *arr){
 }
 
 int main(){
-  int arr[]={1,2,7,-4,6,-3,4};
-  //struct node *root = binaryTree(arr);
+  int arr[]={};
+  struct node *root = binaryTree(arr);
 
 
   cout<<root->data;
-  cout<<root->left->data;
+  //cout<<root->left->data;
 return 0;
 }
