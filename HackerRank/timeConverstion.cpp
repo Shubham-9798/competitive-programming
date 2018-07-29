@@ -3,19 +3,15 @@
 
 using namespace std;
 
-string timeConversion(string str) {
-    /*
-     * Write your code here.
-     */     if((str[9]+str[10])=="PM")
-     {
-         return "sss";
-     }
-    else{
-        str[9]='\0';
-            return str;
-    }
+int stringToInt(string arr){
+     int num = stoi(arr);
+    return num;
+}
 
-
+string timeConversion(string* str) {
+   int hh;
+  // hh=stringToInt(str[0]+str[1]);
+   cout<<*str<<endl;
 
    return "shubham";
 }

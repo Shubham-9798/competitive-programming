@@ -6,22 +6,17 @@
 #include <algorithm>
 using namespace std;
 
+void function breakArr(int *arr,int n,l,r)
+{
 
+
+}
 int main() {
     /* Enter your code here. Read input from STDIN. Print output to STDOUT */
-    int n,i,j;
-    vector<int> arr;
-    vector<int>::iterator it;
-    cin>>n;
-    int val;
+    int arr[5]={1,2,3,4,5};
+    breakArr(arr,5,0,4);
 
 
-    while(cin>>val){
-
-        arr.push_back(val);
-    }
-    for(it=arr.begin();it!=arr.end();it++)
-        cout<<*it<<endl;
     return 0;
 }
 
