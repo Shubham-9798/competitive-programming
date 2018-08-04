@@ -18,9 +18,9 @@ int main(){
                  factor.push_back(k);cout<<k<<endl;}//extra 2 is printing in this case
                 j++;
           }
-          k=0;
+          k=0;cout<<endl;
     }
-
+cout<<endl;
      for(int i=0;i<factor.size();i++){
         cout<<factor[i]<<endl;
      }
