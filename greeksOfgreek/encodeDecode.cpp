@@ -3,13 +3,13 @@
 using namespace std;
 int helper(string data,int strt, auto len){
    //cout<<data<<"DD"<<len<<endl;
-   if(len == strt )
+   if(len == strt)
     return 0;
 
 
 
    helper(data,strt+1,len);
-    cout<<strt<<""<<len<<endl;
+    cout<<strt+len*10<<"\t"<<data[strt]<<""<<data[len]<<endl;
       helper(data,strt,len-1);
 
 
