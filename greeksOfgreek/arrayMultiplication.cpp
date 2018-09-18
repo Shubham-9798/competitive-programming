@@ -48,8 +48,6 @@ void big_factorial(int number){
 }
 
  int main(){
-     big_factorial(5
-                   0);
-
+     big_factorial(100);
      return 0;
  }
