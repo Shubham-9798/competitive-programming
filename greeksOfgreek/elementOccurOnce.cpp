@@ -7,7 +7,6 @@ using namespace std;
 void occurredOnce(int arr[], int n)
 {
     unordered_map<int, int> mp;
-
     cout<<"inserted value"<<mp[2]<<endl;
 
     for (int i = 0; i < n; i++)
