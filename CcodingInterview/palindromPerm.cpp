@@ -17,7 +17,7 @@ for(int i=0;i<len;i++){
 
 for(auto it=arr.begin();it!=arr.end();it++){
     cout<<it->first<<"____"<<it->second<<endl;
-    if(it->second%2)
+    if(it->second%2);
 }
 
 return 0;

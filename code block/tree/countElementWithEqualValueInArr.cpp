@@ -9,11 +9,9 @@ using namespace std;
 int countPairs(int arr[], int n)
 {
     unordered_map<int, int> mp;
-
     // Finding frequency of each number.
     for (int i = 0; i < n; i++)
         mp[arr[i]]++;
-
     // Calculating pairs of each value.
     int ans = 0;
     for (auto it=mp.begin(); it!=mp.end(); it++)
@@ -21,13 +19,11 @@ int countPairs(int arr[], int n)
         int count = it->second;
         ans += (count * (count - 1))/2;
     }
-
     return ans;
 }
 
 // Driven Program
-int main()
-{
+int main(){
     int arr[] = {1, 1, 2};
     int n = sizeof(arr)/sizeof(arr[0]);
     cout << countPairs(arr, n) << endl;

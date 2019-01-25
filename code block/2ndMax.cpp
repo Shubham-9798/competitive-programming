@@ -1,5 +1,6 @@
 // C++ program to demonstrate default behaviour of
 // sort() in STL.
+//3rd max
 
 #include <iostream>
 #include <bits/stdc++.h>
@@ -54,8 +55,12 @@ int main()
 //reverse(strNew);
 
 
+   for(int i=0;i<5;i++){
+      cout<<endl;
+   }
 
-
-
+    for(int i=0;i<25;i++){
+        cout<<'-';
+    }
     return 0;
 }

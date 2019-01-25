@@ -2,7 +2,7 @@
 using namespace std;
 
 // Function prototype
-
+//what is twin prime
 
 bool twinFun(int j);
 int main()
