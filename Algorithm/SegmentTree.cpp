@@ -6,7 +6,7 @@
 
 
 
-/// there is something woring int this code
+/// there is something woring in this code
 
 /*
 #include<iostream>
